@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Otiuskyi</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        body {}
+
+        h5 {
+            line-height: 16px;
+            font-size: 14px;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .content-left {
+            margin-right: 12px;
+            padding-right: 12px;
+            border-right: 1px solid lightgrey;
+            min-width: 250px;
+        }
+
+        .header,
+        .summary,
+        .skills,
+        .experience,
+        .education,
+        .certificates {
+            display: flex;
+            margin: 16px 0;
+            border-top: 1px solid lightgrey;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        .header {
+            justify-content: flex-end;
+            border: none;
+            color: darkslategrey;
+        }
+
+        .summary {}
+
+        .skills {}
+
+        .experience {
+            flex-direction: column;
+        }
+
+        .experience__title {
+            /* TODO */
+            width: 250px;
+            padding-bottom: 12px;
+        }
+
+        .project {
+            display: flex;
+        }
+
+        .project>* {
+            padding-bottom: 12px;
+        }
+
+        .project__content {}
+
+        .certificates {}
+
+        .education {}
+    </style>
+</head>
+
+<body class="container">
+    <header class="header">
+        <div class="header__content">
+            <h1>Roman Otiuskyi</h1>
+            <h2>Software Engineer</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="summary">
+            <h3 class="summary__title content-left">Summary of qualifications</h3>
+            <div class="summary__content">
+                <p>Software engineer with 5+ years of commercial practice with a wide technology stack and focus on
+                    building
+                    modern, maintainable, well-performing, cross-browser/platform Web UI applications, using various
+                    JS/TS
+                    frameworks, libraries.</p>
+                <p>I am passionate about working in a team and never reluctant to help, consult others or even present
+                    an
+                    idea or solution</p>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h3 class="skills__title content-left">
+                Key skills
+            </h3>
+            <ul class="skills__content">
+                <li>JavaScript/TypeScript</li>
+                <li>ES2015+, HTML5</li>
+                <li>Canvas, SVG</li>
+                <li>HTML, CSS/CSS3, SCSS</li>
+                <li>HTTP, WebSocket</li>
+                <li>Node.js</li>
+                <li>npm</li>
+                <li>SQL</li>
+                <li>Git</li>
+                <li>Docker</li>
+                <li>Webpack, Gulp</li>
+                <li>Jest/Jasmine/Mocha</li>
+                <li>Karma, Protractor</li>
+            </ul>
+
+            <ul class="skills__content">
+                <li>React</li>
+                <li>Redux</li>
+                <li>Angular</li>
+                <li>RxJS</li>
+                <li>JQuery</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3 class="experience__title content-left">
+                Experience
+            </h3>
+
+            <div class="experience__content">
+                <div class="project">
+                    <h5 class="project__title content-left">
+                        Common responsibilities
+                    </h5>
+                    <ul class="project__content">
+                        <li>Planning and estimation</li>
+                        <li>Research and investigation</li>
+                        <li>Feature design</li>
+                        <li>Feature implementation</li>
+                        <li>Bug fixing</li>
+                        <li>Code review</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h5 class="project__title content-left">
+                        Project
+                    </h5>
+                    <p class="project__content">A tool for managing partner processes of hotel/fly booking and
+                        trips planning stuff for the world's largest travel platform. Key features: wide API
+                        integration, data grids with bulk update operations, scheduler jobs, reports, alerts
+                    </p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Involvement duration</h5>
+                    <p class="project__content">7 months</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Role</h5>
+                    <p class="project__content">Senior Software Engineer</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Key responsibilities</h5>
+                    <p class="project__content">Requirements clarification/discussions/proposals</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Tools & technologies</h5>
+                    <ul class="project__content">
+                        <li>Postgres</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>Semantic UI React</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h5 class="project__title content-left">
+                        Project
+                    </h5>
+                    <div class="project__content">
+                        <p>Series of modern Web apps for the world's leading management
+                            consulting company and their partners.</p>
+                        <p>Most interesting projects/tasks:</p>
+                        <p>1. Engagement map - a tree-based mix of sub-lists and SVG diagrams that represent
+                            processes/business activities on different layers.</p>
+                        <p>2. HTML5 game - implementation from scratch (for marketing purpose) and future integration
+                            into
+                            existing client website well-known kind of game called ”Space invaders” (with adaptation to
+                            business needs).</p>
+                        <p>3. Touch based application for large screens with very beautiful animations, creative UI/UX
+                            design.</p>
+                        <p>4. Combination of line and pie charts using Gartner API and math approaches to
+                            improve/replace
+                            line interpolation for analyzing technology hype cycle.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Involvement duration</h5>
+                    <p class="project__content">1 year 9 months</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Role</h5>
+                    <p class="project__content">Front-End Technical Lead</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Key responsibilities</h5>
+                    <p class="project__content">Knowledge sharing/mentoring/leading</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Tools & technologies</h5>
+                    <ul class="project__content">
+                        <li> Azure</li>
+                        <li>.NET</li>
+                        <li>C#</li>
+                        <li>MS SQL Server</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>Vue.js</li>
+                        <li>D3.js</li>
+                        <li>JQuery</li>
+                        <li>Bootstrap</li>
+                        <li>BitBucket</li>
+                        <li>TeamCity</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h5 class="project__title content-left">
+                        Project
+                    </h5>
+                    <p class="project__content">Tools/services for network performance monitoring, traffic analyzing,
+                        network configuration management, IP monitoring, IP address management, user device tracking.
+                    </p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Involvement duration</h5>
+                    <p class="project__content">1 year 3 months</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Role</h5>
+                    <p class="project__content">Web UI Engineer</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Key responsibilities</h5>
+                    <p class="project__content">Migration to Angular 2, e2e, unit tests design and implementation</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Tools & technologies</h5>
+                    <ul class="project__content">
+                        <li>.Net</li>
+                        <li>C#</li>
+                        <li>MS SQL Server</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>Angular</li>
+                        <li>D3.js</li>
+                        <li>Bootstrap</li>
+                        <li>LESS</li>
+                        <li>Jasmine</li>
+                        <li>Karma</li>
+                        <li>Protractor</li>
+                        <li>Git</li>
+                        <li>SVN</li>
+                        <li>TeamCity</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h5 class="project__title content-left">
+                        Project
+                    </h5>
+                    <p class="project__content">Advertising CMS. HR CMS</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Involvement duration</h5>
+                    <p class="project__content">2 years 1 month</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Role</h5>
+                    <p class="project__content">Junior Front-End Engineer</p>
+                </div>
+                <div class="project">
+                    <h5 class="project__title content-left">Key responsibilities</h5>
+                    <p class="project__content">Quick learning</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="certificates">
+            <h3 class="certificates__title content-left">Certificates</h3>
+            <div class="certificates__content">
+                <p>Passing Microsoft Exam 480: Programming in HTML5 with JavaScript and CSS3
+                    validates a candidate’s ability to access and secure data as well as implement document structures,
+                    objects, and program flow.</p>
+                <h5>Jun 2017</h5>
+            </div>
+        </div>
+
+        <div class="education">
+            <h3 class="education__title content-left">Education</h3>
+            <div class="education__content">
+                <h5>M. Sc.</h5>
+                <p>Igor Sikorsky Kyiv Polytechnic Institute</p>
+                <p>Welding Machine Department</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
