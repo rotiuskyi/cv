@@ -7,6 +7,10 @@
     <title>Roman Otiuskyi</title>
 
     <style>
+        :root {
+            --indent: 15px;
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -28,7 +32,9 @@
             margin-bottom: 0;
         }
 
-        body {}
+        body {
+            min-width: 375px;
+        }
 
         h5 {
             line-height: 16px;
@@ -37,12 +43,13 @@
 
         .container {
             margin: 0 auto;
-            max-width: 900px;
+            padding: 0 var(--indent);
+            max-width: 1200px;
         }
 
         .content-left {
-            margin-right: 12px;
-            padding-right: 12px;
+            margin-right: var(--indent);
+            padding-right: var(--indent);
             border-right: 1px solid lightgrey;
             min-width: 250px;
         }
@@ -54,7 +61,7 @@
         .education,
         .certificates {
             display: flex;
-            margin: 16px 0;
+            margin: var(--indent) 0;
             border-top: 1px solid lightgrey;
             border-bottom: 1px solid lightgrey;
         }
@@ -69,6 +76,10 @@
 
         .skills {}
 
+        .skills__content {
+            display: flex;
+        }
+
         .experience {
             flex-direction: column;
         }
@@ -76,7 +87,7 @@
         .experience__title {
             /* TODO */
             width: 250px;
-            padding-bottom: 12px;
+            padding-bottom: var(--indent);
         }
 
         .project {
@@ -84,7 +95,7 @@
         }
 
         .project>* {
-            padding-bottom: 12px;
+            padding-bottom: var(--indent);
         }
 
         .project__content {}
@@ -92,6 +103,22 @@
         .certificates {}
 
         .education {}
+
+        @media (max-width: 767px) {
+            .content-left {
+                border-right: none;
+            }
+
+            .header,
+            .summary,
+            .skills,
+            .experience,
+            .education,
+            .certificates,
+            .project {
+                flex-wrap: wrap;
+            }
+        }
     </style>
 </head>
 
@@ -122,29 +149,31 @@
             <h3 class="skills__title content-left">
                 Key skills
             </h3>
-            <ul class="skills__content">
-                <li>JavaScript/TypeScript</li>
-                <li>ES2015+, HTML5</li>
-                <li>Canvas, SVG</li>
-                <li>HTML, CSS/CSS3, SCSS</li>
-                <li>HTTP, WebSocket</li>
-                <li>Node.js</li>
-                <li>npm</li>
-                <li>SQL</li>
-                <li>Git</li>
-                <li>Docker</li>
-                <li>Webpack, Gulp</li>
-                <li>Jest/Jasmine/Mocha</li>
-                <li>Karma, Protractor</li>
-            </ul>
+            <div class="skills__content">
+                <ul>
+                    <li>JavaScript/TypeScript</li>
+                    <li>ES2015+, HTML5</li>
+                    <li>Canvas, SVG</li>
+                    <li>HTML, CSS/CSS3, SCSS</li>
+                    <li>HTTP, WebSocket</li>
+                    <li>Node.js</li>
+                    <li>npm</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>Webpack, Gulp</li>
+                    <li>Jest/Jasmine/Mocha</li>
+                    <li>Karma, Protractor</li>
+                </ul>
 
-            <ul class="skills__content">
-                <li>React</li>
-                <li>Redux</li>
-                <li>Angular</li>
-                <li>RxJS</li>
-                <li>JQuery</li>
-            </ul>
+                <ul>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>Angular</li>
+                    <li>RxJS</li>
+                    <li>JQuery</li>
+                </ul>
+            </div>
         </div>
 
         <div class="experience">
@@ -312,9 +341,7 @@
                 </div>
             </div>
         </div>
-    </main>
 
-    <footer>
         <div class="certificates">
             <h3 class="certificates__title content-left">Certificates</h3>
             <div class="certificates__content">
@@ -333,7 +360,7 @@
                 <p>Welding Machine Department</p>
             </div>
         </div>
-    </footer>
+    </main>
 </body>
 
 </html>
