@@ -21,6 +21,17 @@ function Project(props) {
 
   return html`
     <div class="project">
+      ${company && html`
+        <div class="row">
+          <h5 class="col left">
+            Company
+          </h5>
+          <div class="col">
+              ${company}
+            </div>
+          </div>
+      `}
+
       <div class="row">
         <h5 class="col left">
           Project
@@ -29,17 +40,6 @@ function Project(props) {
           ${titleElement}
         </div>
       </div>
-
-      ${company && html`
-      <div class="row">
-        <h5 class="col left">
-          Company
-        </h5>
-        <div class="col">
-            ${company}
-          </div>
-        </div>
-      `}
 
       <div class="row">
         <h5 class="col left">Involvement period</h5>
@@ -51,21 +51,23 @@ function Project(props) {
         <p class="col">${role}</p>
       </div>
 
-      <div class="row">
-        <h5 class="col left">Responsibilities</h5>
-        <ul class="col">
-          ${responsibilities.map(r => {
-            return html`
-              <li key=${r}>${r}</li>
-            `;
-          })}
-        </ul>
-      </div>
+      ${responsibilities && html`
+        <div class="row">
+          <h5 class="col left">Responsibilities</h5>
+          <ul class="col">
+            ${responsibilities.map(r => {
+              return html`
+                <li key=${r}>${r}</li>
+              `;
+            })}
+          </ul>
+        </div>
+      `}
 
       <div class="row">
         <h5 class="col left">Used technologies</h5>
         <p class="col">
-          TypeScript, Nuxt/Vue.js, Pinia, @tanstack/vue-query, Tailwind CSS, Playwright
+          ${description}
         </p>
       </div>
     </div>

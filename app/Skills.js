@@ -5,8 +5,8 @@ function Skills() {
         Skills
       </h3>
       <div class="skills__content">
-        <p>JavaScript/TypeScript, React, Redux, MobX, Node.js, Express.js, .Net, C#, PostgreSQL, HTML, CSS, Git,
-          Docker, CI/CD, AWS, GCP, unit and e2e testing
+        <p>TypeScript, C#, React, Angular, .NET, Node.js, PostgreSQL, HTML, CSS, Git,
+          Docker, CI/CD, AWS, GCP, Azure
         </p>
       </div>
     </div>

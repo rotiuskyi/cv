@@ -4,11 +4,22 @@ import ProjectModel from "../app.models/ProjectModel.js";
 function Projects() {
   const projectList = signal([
     new ProjectModel(
+      "Navigation, Flight Planning and Flight Control Software",
+      "Aircraft/UAV designer and manufacturer",
+      ".NET, C#, Windows Forms, TypeScript, JavaScript, Preact, Preact Signals, Python, FastAPI, Docker, Postgres, Postgis, Gitlab CI/CD, Vitest, GCP, Azure",
+      "Lead Software Engineer",
+      "Jul 2024 - Present",
+      [
+        "Working on design documents and technical requirements",
+        "Leading a team focused on designing and developing software for navigation, flight planning, flight control, hardware device integration, and integration with external systems"
+      ]
+    ),
+    new ProjectModel(
       "єЧерга - Fast border crossing",
       "Digital City",
-      "TypeScript, Nuxt/Vue.js, Pinia, @tanstack/vue-query, Tailwind CSS, Playwright",
+      "TypeScript, Nuxt/Vue.js, Pinia, Tanstack/Vue Query, Tailwind CSS, Vitest, Playwright",
       "Lead Software Engineer",
-      "Sept 2023 - Dec 2024 (1 year 4 months)",
+      "Sept 2023 - Jul 2024 (10 months)",
       [
         "Ensured a feature-rich and user-friendly experience under tight deadlines, avoiding shortcuts that would compromise functionality",
         "Led the implementation of the new transport queue type (bus) flow",
@@ -19,8 +30,8 @@ function Projects() {
     ),
     new ProjectModel(
       "Workspace Management System (WeWork)",
-      "SoftServe (3 years 3 months)",
-      "Golang/Gin, TypeScript, React, Monorepo (Lerna), Microfrontend (Single-spa), WebGL/Three.js, Tailwind CSS",
+      "SoftServe",
+      "TypeScript, React, Monorepo (Lerna), Microfrontend (Single-spa), WebGL/Three.js, Tailwind CSS",
       "Technical Leader",
       "Jun 2021 - Jan 2023",
       [
@@ -34,7 +45,7 @@ function Projects() {
     new ProjectModel(
       "AdTech Platform with AI Video Analysis (Qortex AI)",
       "",
-      "TypeScript, Node.js, Express.js, OpenAPI, React, MobX, Firebase, AWS S3, GCP",
+      "TypeScript, C#, .NET, Node.js, Express.js, OpenAPI, React, MobX, Firebase, AWS S3, GCP",
       "Technical Leader",
       "Sep 2020 - Jun 2021",
       [
@@ -91,11 +102,11 @@ function Projects() {
       "Software Engineer",
       "Nov 2016 - Jan 2018 (1 yr 3 months)",
       [
-        "Contributed to work planning, goals and priority discussions",
+        "Contributed to work planning, goals, and priority discussions",
         "Regularly presented finished work to the stakeholders during the demo sessions",
         "Migrated the core components from Angular.js to Angular 2 with improvements",
         "Contributed to the Angular-based design system widely used across the platform",
-        "Designed and implemented e2e, unit, UI and performance tests",
+        "Designed and implemented e2e, unit, UI, and performance tests",
         "Implemented and maintained CI pipelines (TeamCity)"
       ]
     ),
@@ -110,7 +121,7 @@ function Projects() {
     new ProjectModel(
       "Real Estate Management System / Human Resources Management System",
       "Glorium Technologies",
-      ".Net, C#, JavaScript, Angular.js, TeamCity, Jenkins, NUnit, Selenium WebDriver",
+      ".NET, C#, JavaScript, Angular.js, TeamCity, Jenkins, NUnit, Selenium WebDriver",
       "Junior QA Automation Engineer / Junior Software Engineer",
       "Dec 2014 - June 2015 (1 yr 6 months)",
       []
