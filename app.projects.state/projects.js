@@ -19,7 +19,7 @@ function Projects() {
     ),
     new ProjectModel(
       "Workspace Management System (WeWork)",
-      "SoftServe",
+      "SoftServe (3 years 3 months)",
       "Golang/Gin, TypeScript, React, Monorepo (Lerna), Microfrontend (Single-spa), WebGL/Three.js, Tailwind CSS",
       "Technical Leader",
       "Jun 2021 - Jan 2023",
@@ -33,7 +33,7 @@ function Projects() {
     ),
     new ProjectModel(
       "AdTech Platform with AI Video Analysis (Qortex AI)",
-      "SoftServe",
+      "",
       "TypeScript, Node.js, Express.js, OpenAPI, React, MobX, Firebase, AWS S3, GCP",
       "Technical Leader",
       "Sep 2020 - Jun 2021",
@@ -47,7 +47,7 @@ function Projects() {
     ),
     new ProjectModel(
       "Customer engagement & marketing automation tools (Acoustic)",
-      "SoftServe",
+      "",
       "TypeScript, React, Redux, redux-observable, RxJS, Sass, React Testing Library",
       "Senior Software Engineer",
       "Jun 2020 - Sep 2020",
@@ -61,7 +61,7 @@ function Projects() {
     ),
     new ProjectModel(
       "Digital Analytics Platform (TripAdvisor)",
-      "SoftServe",
+      "",
       "Java, Spring Boot, PostgreSQL, JavaScript, React, Redux, Semantic UI React, CSS modules",
       "Senior Software Engineer",
       "Sep 2019 - Jun 2020",

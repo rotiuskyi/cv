@@ -30,14 +30,16 @@ function Project(props) {
         </div>
       </div>
 
+      ${company && html`
       <div class="row">
         <h5 class="col left">
           Company
         </h5>
         <div class="col">
-          ${company}
+            ${company}
+          </div>
         </div>
-      </div>
+      `}
 
       <div class="row">
         <h5 class="col left">Involvement period</h5>

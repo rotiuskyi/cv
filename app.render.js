@@ -4,4 +4,6 @@ import App from "./app/App.js";
 
 window.html = htm.bind(h);
 
-render(html`<${App} />`, document.body);
+// <... id="main">...</...> is available as global object
+// by the name equals to given DOM's block id
+render(html`<${App} />`, main);
