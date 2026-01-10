@@ -1,0 +1,118 @@
+:root {
+  --indent: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  min-width: 375px;
+}
+
+h5 {
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--indent);
+  max-width: 1200px;
+}
+
+.row {
+  display: flex;
+}
+
+.row>* {
+  padding-bottom: var(--indent);
+}
+
+.col {
+  display: block;
+}
+
+.left {
+  margin-right: var(--indent);
+  padding-right: var(--indent);
+  border-right: 1px solid lightgrey;
+  min-width: 250px;
+}
+
+.header {
+  justify-content: flex-end;
+  border: none;
+  color: darkslategrey;
+}
+
+.header,
+.summary,
+.skills,
+.experience,
+.education,
+.certificates {
+  display: flex;
+  margin: var(--indent) 0;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+.skills__content {
+  display: flex;
+}
+
+.experience {
+  flex-direction: column;
+}
+
+.experience__title {
+  width: 250px;
+  padding-bottom: var(--indent);
+}
+
+.experience__content>ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project:not(:first-child)>.row:first-child>.col {
+  padding-top: 30px;
+}
+
+.project-item {
+  margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .left {
+    border-right: none;
+  }
+
+  .header,
+  .summary,
+  .skills,
+  .experience,
+  .education,
+  .certificates,
+  .row {
+    flex-wrap: wrap;
+  }
+}

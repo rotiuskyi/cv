@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "preact": "./unpkg/preact.module.js",
+    "preact/hooks": "./unpkg/hooks.module.js",
+    "@preact/signals-core": "./unpkg/signals-core.module.js",
+    "@preact/signals": "./unpkg/signals.module.js",
+    "htm": "./unpkg/htm.module.js"
+  }
+}
